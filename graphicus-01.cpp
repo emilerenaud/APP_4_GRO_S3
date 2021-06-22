@@ -6,14 +6,16 @@
  *    fichier fait partie de la distribution de Graphicus.
 ********/
 #include "tests.h"
+#include "carre.h"
 
 using namespace std;
 
 int main()
 {
    Tests tests;
-   
+   Carre carre;
    tests.tests_application();
+   
    return 0;
 }
 
