@@ -20,6 +20,9 @@ class Carre : public Rectangle
 public:
     Carre();
     Carre(int x1, int y1, int lenghtSide);
+    ~Carre();
+    void setSide(int side);
+    int getSide(void);
 private:
 protected:
 };

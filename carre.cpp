@@ -23,3 +23,25 @@ Carre::Carre(int x1, int y1, int lenghtSide)
     ancrage.y = y1;
     _width = _height = lenghtSide;
 }
+
+Carre::~Carre()
+{
+
+}
+
+void Carre::setSide(int side)
+{
+    _width = _height = side;
+}
+
+int Carre::getSide()
+{
+    if(_width == _height)
+    {
+        return _width;
+    }
+    else
+    {
+        return -1;
+    }
+}

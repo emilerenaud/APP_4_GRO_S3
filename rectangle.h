@@ -21,6 +21,7 @@ class Rectangle : public Forme
 public:
     Rectangle();
     Rectangle(int x1, int y1, int width, int lenght);
+    ~Rectangle();
     double aire(void);
     void afficher(ostream & s);
     void setWidth(int width);

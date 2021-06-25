@@ -27,6 +27,9 @@ Rectangle::Rectangle(int x1, int y1, int width, int height)
     // findCorner();
 }
 
+Rectangle::~Rectangle()
+{
+}
 // void Rectangle::findCorner()
 // {
 //     _p1 = _ancrage;

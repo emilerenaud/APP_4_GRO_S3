@@ -26,10 +26,8 @@ public:
     void afficher(ostream & s);
     void setRayon(int rayon);
     int getRayon(void);
-//     int getLength(void);
-// private:
-//     void findCorner();
-// protected:
+
+protected:
     int _rayon;
 };
 
