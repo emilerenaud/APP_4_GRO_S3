@@ -109,7 +109,22 @@ int Couche::getEtat()
 
 void Couche::afficher(ostream & s)
 {
-    if(_etat != CACHE)
+    if(_etat == CACHE)
+    {
+        s << "Couche cachee\n";
+    }
+    else if(_etat == INIT)
+    {
+        s << "Couche initialisee\n";
+    }
+    else if(_vecteur->vecteurVide() == 1)
+    {
+        s << "Couche vide\n";
+    }
+    else
+    {
         _vecteur->afficher(s);
+    }
+
 }
 

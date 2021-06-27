@@ -31,7 +31,10 @@ double Cercle::aire(void)
 
 void Cercle::afficher(ostream & s)
 {
-
+    s << "Cercle (";
+    s << "x=" << ancrage.x << ", y=" << ancrage.y;
+    s << ", l=" << _rayon;
+    s << ", aire=" << aire() << ")\n";
 }
     
 void Cercle::setRayon(int rayon)
@@ -43,3 +46,4 @@ int Cercle::getRayon(void)
 {
     return _rayon;
 }
+

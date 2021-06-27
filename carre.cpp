@@ -45,3 +45,10 @@ int Carre::getSide()
         return -1;
     }
 }
+void  Carre::afficher(ostream & s)
+{
+    s << "Carre (";
+    s << "x=" << ancrage.x << ", y=" << ancrage.y;
+    s << ", c=" << _width;
+    s << ", aire=" << aire() << ")\n";
+}

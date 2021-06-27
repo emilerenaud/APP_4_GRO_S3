@@ -128,6 +128,8 @@ void Canevas::afficher(ostream & s)
 {
    for(int i = 0; i<MAX_COUCHES; i++)
    {
+      s << "----- Couche " << i << "\n";
+   
       _couches[i].afficher(s);
    }
 }

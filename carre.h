@@ -23,6 +23,7 @@ public:
     ~Carre();
     void setSide(int side);
     int getSide(void);
+    void afficher(ostream & s);
 private:
 protected:
 };

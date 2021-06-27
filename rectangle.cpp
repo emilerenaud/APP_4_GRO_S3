@@ -48,7 +48,10 @@ double Rectangle::aire()
 
 void Rectangle::afficher(ostream & s)
 {
-
+    s << "Rectangle (";
+    s << "x=" << ancrage.x << ", y=" << ancrage.y;
+    s << ", l=" << _width << ", h=" << _height;
+    s << ", aire=" << aire() << ")\n";
 }
 
 void Rectangle::setWidth(int width)
