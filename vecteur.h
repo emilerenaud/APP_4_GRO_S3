@@ -19,21 +19,24 @@ using namespace std;
 class Vecteur
 {
 public:
-    Vecteur();
-    // Rectangle();
-    // Rectangle(int x1, int y1, int width, int lenght);
-    // ~Rectangle();
-    // double aire(void);
-    // void afficher(ostream & s);
-    // void setWidth(int width);
-    // void setLength(int lenght);
-    // int getWitdh(void);
-    // int getLength(void);
+    Vecteur(int capacite);
+    ~Vecteur();
+    int getCapacite(void);
+    int getIndice(void);
+    void clearVecteur(void);
+    bool vecteurVide(void);
+    bool addForme(Forme *forme);
+    Forme* deleteForme(int indice);
+    Forme* getForme(int indice);
+    void afficher(ostream & s);
+    
+    
 private:
 
 protected:
-    // int _width;
-    // int _height;
+    Forme** _tableau;
+    int _capacite;
+    int _indice;
 };
 
 #endif

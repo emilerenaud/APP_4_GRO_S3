@@ -10,10 +10,35 @@
 
 #ifndef COUCHE_H
 #define COUCHE_H
+#include <iostream>
+#include "coordonnee.h"
+#include "vecteur.h"
+
+#define INIT 0
+#define ACTIVE 1
+#define INACTIVE 2
+#define CACHE 3
 
 class Couche
 {
-   // Classe a completer
+   public:
+      Couche();
+      bool addForme(Forme* forme);
+      Forme* removeForme(int indice);
+      Forme* getForme(int indice);
+      double aire(void);
+      bool translater(int deltaX, int deltaY);
+      bool reset(void);
+      bool changeEtat(int etat);
+      int getEtat(void);
+      void afficher(ostream & s);
+   private:
+
+   protected:
+   int _etat = INIT;
+   double _aire;
+   Vecteur* _vecteur;
+
 };
 
 #endif
