@@ -17,6 +17,7 @@ Carre::Carre()
     // findCorner();
 }
 
+
 Carre::Carre(int x1, int y1, int lenghtSide)
 {
     ancrage.x = x1;

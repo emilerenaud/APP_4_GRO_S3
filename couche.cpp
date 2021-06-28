@@ -41,6 +41,7 @@ double Couche::aire(void)
 {
     if(_etat == CACHE)
         return 0; // Aire = 0 si l'etat est cache.
+    _aire = 0;
     for(int i = 0; i<_vecteur->getIndice(); i++)
     {
         Forme* forme = getForme(i);
@@ -117,7 +118,7 @@ void Couche::afficher(ostream & s)
     {
         s << "Couche initialisee\n";
     }
-    else if(_vecteur->vecteurVide() == 1)
+    else if(_vecteur->isVecteurVide() == 1)
     {
         s << "Couche vide\n";
     }

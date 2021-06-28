@@ -13,6 +13,8 @@
 #include "rectangle.h"
 #include "carre.h"
 #include "cercle.h"
+#include "vecteur.h"
+#include "couche.h"
 
 using namespace std;
 

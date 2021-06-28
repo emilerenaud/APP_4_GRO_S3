@@ -24,7 +24,7 @@ public:
     int getCapacite(void);
     int getIndice(void);
     void clearVecteur(void);
-    bool vecteurVide(void);
+    bool isVecteurVide(void);
     bool addForme(Forme *forme);
     Forme* deleteForme(int indice);
     Forme* getForme(int indice);

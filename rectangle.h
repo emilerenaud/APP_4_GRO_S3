@@ -20,7 +20,7 @@ class Rectangle : public Forme
 {
 public:
     Rectangle();
-    Rectangle(int x1, int y1, int width, int lenght);
+    Rectangle(int x1, int y1, int width, int height);
     ~Rectangle();
     double aire(void);
     void afficher(ostream & s);

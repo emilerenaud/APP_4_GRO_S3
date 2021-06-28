@@ -53,12 +53,62 @@ void Tests::tests_unitaires_formes()
 
 void Tests::tests_unitaires_vecteur()
 {
-   // Tests sur la classe Vecteur
+   Vecteur vecteur(1);
+   cout << "Capacite vecteur(1) : " << vecteur.getCapacite() << endl;
+   cout << "Indice vecteur(0) : " << vecteur.getIndice() << endl;
+   Forme *pCarre;
+   pCarre = new Carre(1,1,1);
+   vecteur.addForme(pCarre);
+   cout << "Indice vecteur(1) : " << vecteur.getIndice() << endl;
+   cout << "Aire forme 0(1) : " << vecteur.getForme(0)->aire() << endl;
+   Forme *pRect = new Rectangle(0,0,1,2);
+   vecteur.addForme(pRect);
+   cout << "capacite vecteur(2) : " << vecteur.getCapacite() << endl;
+   cout << "Indice vecteur(2) : " << vecteur.getIndice() << endl;
+   vecteur.afficher(cout);
+
+   // Forme *pDeleteObject = vecteur.deleteForme(0);
+   cout << "Indice vecteur(1) : " << vecteur.getIndice() << endl;
+   cout << "Aire forme 0(2) : " << vecteur.getForme(0)->aire() << endl;
+   vecteur.clearVecteur();
+   cout << "Indice fok(0) : " << vecteur.getIndice() << endl;
+   if(vecteur.isVecteurVide() == 1)
+   {
+      cout << "vecteur vide" << endl;
+   }
+   cout << "fok" <<endl;
 }
 
 void Tests::tests_unitaires_couche()
 {
    // Tests sur la classe Couche
+   Couche couche;
+   Forme *pRect = new Rectangle(0,0,2,1);
+   Forme *pCarre = new Carre(1,1,1);
+   Forme *pCarre2 = new Carre(1,1,1);
+   Forme *pCercle = new Cercle(5,5,1);
+   double aireTest = pRect->aire() + pCarre->aire() + pCercle->aire();
+   cout << "Aire avec les methodes internes = " << aireTest << endl;
+   if(couche.addForme(pRect) == 1)
+   {
+      cout << "impossible de mettre la forme, l'etat de la couche n'est pas bonne" << endl;
+   }
+   couche.changeEtat(ACTIVE);
+   couche.addForme(pRect);
+   couche.addForme(pCarre);
+   // couche.addForme(pCarre2);
+   // couche.addForme(pCercle);
+   cout << "Aire avec la couche = " << couche.aire() << endl;
+   // couche.translater(1,1);
+   // cout << "Origine Cercle (6,6) = x: " << pCercle->getAncrage().x << " , y: " << pCercle->getAncrage().y << endl;
+   // cout << "etat couche = " << couche.getEtat() << endl;
+   // couche.changeEtat(INACTIVE);
+   // cout << "etat couche = " << couche.getEtat() << endl;
+   // couche.changeEtat(ACTIVE);
+   couche.afficher(cout);
+   couche.removeForme(1);
+   cout << "Aire avec la couche - le carre = " << couche.aire() << endl;
+   couche.afficher(cout);
 }
 
 void Tests::tests_unitaires_canevas()

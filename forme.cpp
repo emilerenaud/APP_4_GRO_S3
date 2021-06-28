@@ -17,6 +17,7 @@ Forme::Forme(int x1, int y1)
 
 Forme::~Forme()
 {
+   
 }
 
 void Forme::translater(int deltaX, int deltaY)

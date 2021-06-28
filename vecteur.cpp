@@ -39,14 +39,22 @@ int Vecteur::getIndice(void)
 
 void Vecteur::clearVecteur(void)
 {
-    for(int i = 0; i<_capacite; i++)
+    try
     {
-        _tableau[i]->~Forme();
-        _tableau[i] = 0;
+        for(int i = 0; i<_indice; i++)
+        {
+            _tableau[i]->~Forme();
+            _tableau[i] = 0;
+        }
+        _indice = 0;
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
     }
 }
     
-bool Vecteur::vecteurVide(void)
+bool Vecteur::isVecteurVide(void)
 {
     if(_indice == 0)
         return 1;
@@ -56,7 +64,7 @@ bool Vecteur::vecteurVide(void)
     
 bool Vecteur::addForme(Forme *forme)
 {
-    if(_indice > _capacite)
+    if(_indice == _capacite)
     {
         Forme** tableau2 = new Forme*[_capacite * 2];
         for(int i = 0; i < _capacite; i++)
@@ -80,6 +88,15 @@ bool Vecteur::addForme(Forme *forme)
         std::cout << "Error addForme \n";
         return 1;
     }
+    try
+    {
+        /* code */
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
+    
 }
 
     
@@ -90,13 +107,18 @@ Forme* Vecteur::deleteForme(int indice)
     Forme* pObjet = _tableau[indice];  // stocker l'adresse de l'objet
     try
     {
-        for(int i = indice; i<_capacite; i++)
+        for(int i = indice; i<_indice; i++)
         {
             _tableau[i] = _tableau[i+1];
         }
-        _tableau[+indice] = 0; // reset the last element. shifting.
+        // _tableau[indice] = _tableau[indice+1];
+        // _tableau[indice+1] = _tableau[indice+2];
+        _tableau[_indice] = 0; // reset the last element. shifting.
         _indice --;
+        std::cout << "_indice : " << _indice << std::endl;
+        std::cout << "indice : " << indice << std::endl;
         std::cout << "forme removed from Vecteur" << std::endl;
+
         return pObjet;
     }
     catch(const std::exception& e)
