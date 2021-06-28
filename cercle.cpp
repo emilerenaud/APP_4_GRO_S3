@@ -26,7 +26,7 @@ Cercle::Cercle(int x1, int y1, int rayon)
 
 double Cercle::aire(void)
 {
-    return 2*M_PI*pow(_rayon,2);
+    return M_PI*pow(_rayon,2);
 }
 
 void Cercle::afficher(ostream & s)

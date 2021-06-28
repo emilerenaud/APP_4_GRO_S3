@@ -25,7 +25,7 @@ public:
    ~Canevas();
    
    bool reinitialiser();
-   
+   bool reinitialiser(int index);
    bool activerCouche(int index);
    bool cacherCouche(int index);
    

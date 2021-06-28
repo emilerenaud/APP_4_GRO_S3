@@ -17,7 +17,7 @@ Vecteur::Vecteur(int capacite)
     // clear tableau
     for(int i = 0; i<_capacite; i++)
     {
-        _tableau[i] = 0;
+        _tableau[i] = NULL;
     }
 }
     
@@ -44,7 +44,7 @@ void Vecteur::clearVecteur(void)
         for(int i = 0; i<_indice; i++)
         {
             _tableau[i]->~Forme();
-            _tableau[i] = 0;
+            _tableau[i] = NULL;
         }
         _indice = 0;
     }
@@ -79,7 +79,7 @@ bool Vecteur::addForme(Forme *forme)
     {
         _tableau[_indice] = forme;
         _indice ++;
-        std::cout << "forme added" << std::endl;
+        // std::cout << "forme added" << std::endl;
         return 0;
     }
     catch(const std::exception& e)
@@ -107,17 +107,15 @@ Forme* Vecteur::deleteForme(int indice)
     Forme* pObjet = _tableau[indice];  // stocker l'adresse de l'objet
     try
     {
-        for(int i = indice; i<_indice; i++)
+        for(int i = indice; i<_indice; i++) // shift all the value to fill the gap.
         {
             _tableau[i] = _tableau[i+1];
         }
-        // _tableau[indice] = _tableau[indice+1];
-        // _tableau[indice+1] = _tableau[indice+2];
-        _tableau[_indice] = 0; // reset the last element. shifting.
+        _tableau[_indice] = NULL; // reset the last element (shifting)
         _indice --;
-        std::cout << "_indice : " << _indice << std::endl;
-        std::cout << "indice : " << indice << std::endl;
-        std::cout << "forme removed from Vecteur" << std::endl;
+        // std::cout << "_indice : " << _indice << std::endl;
+        // std::cout << "indice : " << indice << std::endl;
+        // std::cout << "forme removed from Vecteur" << std::endl;
 
         return pObjet;
     }
@@ -147,7 +145,7 @@ Forme* Vecteur::getForme(int indice)
 
 void Vecteur::afficher(ostream & s)
 {
-    for(int i = 0; i<_capacite; i++)
+    for(int i = 0; i<_indice; i++)
     {
         _tableau[i]->afficher(s);
     }

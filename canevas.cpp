@@ -42,6 +42,12 @@ bool Canevas::reinitialiser()
    }
 }
 
+bool Canevas::reinitialiser(int index)
+{
+   _couches[index].reset();
+   return 0;
+}
+
 bool Canevas::activerCouche(int index)
 {
    try
@@ -102,6 +108,7 @@ bool Canevas::retirerForme(int index)
 
 double Canevas::aire()
 {
+   _aire = 0;
    for(int i = 0; i<MAX_COUCHES; i++)
    {
       _aire += _couches[i].aire();
