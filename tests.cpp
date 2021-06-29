@@ -165,7 +165,7 @@ void Tests::tests_application_cas_01()
    canevas.translater(5,5);   // 8a
    cout << " step 8" << endl;
    canevas.afficher(cout); // 8b ?
-   canevas.cacherCouche(2);   // 9
+   canevas.cacherCouche(2);  // 9 FONCTIONNNE PAS 
    // 10 - 11 . couche 3 et 4 encore init ?
    cout << " step 12 " << endl;
    canevas.afficher(cout); // 12
@@ -182,6 +182,7 @@ void Tests::tests_application_cas_01()
    cout << " step 18 " << endl;
    canevas.afficher(cout); // 18
    cout << "Aire couche step 19 = " << canevas.aire() << endl; // 19
+
 }
 
 void Tests::tests_application_cas_02()

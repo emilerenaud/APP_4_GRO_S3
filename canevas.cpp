@@ -77,7 +77,7 @@ bool Canevas::activerCouche(int index)
 
 bool Canevas::cacherCouche(int index)
 {
-   if(_couches[index].changeEtat(INACTIVE) == 0) // checker si l'index est bonne genre.
+   if(_couches[index].changeEtat(CACHE) == 0) // checker si l'index est bonne genre.
    {
       _coucheActive = -1;
       return 0;
