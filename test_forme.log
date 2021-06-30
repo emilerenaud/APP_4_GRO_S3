@@ -1,0 +1,19 @@
+Test unitaire forme
+Origine Rectangle (0,0) = x: 0 , y: 0
+Nouvelle origine (1,2) = x: 1 , y: 2
+Dimension Rectangle (1,2) = width: 1 , lenght: 2
+Aire Rectangle (2) = 2
+Nouvelle dimension (2,4) = width: 2 , lenght: 4
+Nouvelle aire (8)  = 8
+Origine Carre (0,0) = x: 0 , y: 0
+Nouvelle origine (1,2) = x: 0 , y: 0
+Dimension Carre (1) = side: 1
+Aire Carre (1) = 1
+Nouvelle Carre (2) = side: 2
+Nouvelle aire (4)  = 4
+Origine Cercle (0,0) = x: 0 , y: 0
+Nouvelle origine (1,2) = x: 1 , y: 2
+Dimension Cercle (1) = rayon: 1
+Aire Cercle (1) = 3.14159
+Nouveau rayon (2) = side: 2
+Nouvelle aire (4)  = 12.5664

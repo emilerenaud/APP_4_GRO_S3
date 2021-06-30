@@ -1,0 +1,79 @@
+TESTS APPLICATION (CAS 01)
+Etape 1 a 6
+ step 5
+----- Couche 0
+Couche vide
+----- Couche 1
+Rectangle (x=0, y=0, l=2, h=3, aire=6)
+Carre (x=2, y=3, c=4, aire=16)
+Cercle (x=7, y=8, l=6, aire=113.097)
+----- Couche 2
+Rectangle (x=0, y=0, l=4, h=5, aire=20)
+----- Couche 3
+Couche initialisee
+----- Couche 4
+Couche initialisee
+Aire couche step 6 = 155.097
+
+Etape 7 to 13
+ step 8
+----- Couche 0
+Rectangle (x=0, y=0, l=1, h=1, aire=1)
+Carre (x=0, y=0, c=1, aire=1)
+Cercle (x=0, y=0, l=1, aire=3.14159)
+----- Couche 1
+Rectangle (x=5, y=5, l=2, h=3, aire=6)
+Carre (x=7, y=8, c=4, aire=16)
+Cercle (x=12, y=13, l=6, aire=113.097)
+----- Couche 2
+Rectangle (x=0, y=0, l=4, h=5, aire=20)
+----- Couche 3
+Couche initialisee
+----- Couche 4
+Couche initialisee
+ step 12 
+----- Couche 0
+Rectangle (x=0, y=0, l=1, h=1, aire=1)
+Carre (x=0, y=0, c=1, aire=1)
+Cercle (x=0, y=0, l=1, aire=3.14159)
+----- Couche 1
+Rectangle (x=5, y=5, l=2, h=3, aire=6)
+Carre (x=7, y=8, c=4, aire=16)
+Cercle (x=12, y=13, l=6, aire=113.097)
+----- Couche 2
+Couche cachee
+----- Couche 3
+Couche initialisee
+----- Couche 4
+Couche initialisee
+Aire couche step 13 = 140.239
+
+Etape 14 to 16
+----- Couche 0
+Rectangle (x=0, y=0, l=1, h=1, aire=1)
+Carre (x=0, y=0, c=1, aire=1)
+Cercle (x=0, y=0, l=1, aire=3.14159)
+----- Couche 1
+Carre (x=7, y=8, c=4, aire=16)
+Cercle (x=12, y=13, l=6, aire=113.097)
+----- Couche 2
+Couche cachee
+----- Couche 3
+Couche initialisee
+----- Couche 4
+Couche initialisee
+Aire couche step 16 = 134.239
+Etape 17 to 19
+ step 18 
+----- Couche 0
+Couche vide
+----- Couche 1
+Couche initialisee
+----- Couche 2
+Couche initialisee
+----- Couche 3
+Couche initialisee
+----- Couche 4
+Couche initialisee
+Aire couche step 19 = 0
+TESTS APPLICATION (CAS 02)

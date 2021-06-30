@@ -1,0 +1,41 @@
+----- Couche 0
+Couche vide
+----- Couche 1
+Couche initialisee
+----- Couche 2
+Couche initialisee
+----- Couche 3
+Couche initialisee
+----- Couche 4
+Couche initialisee
+Aire 7.14159
+----- Couche 0
+Rectangle (x=0, y=0, l=2, h=1, aire=2)
+----- Couche 1
+Carre (x=1, y=1, c=1, aire=1)
+----- Couche 2
+Carre (x=1, y=1, c=1, aire=1)
+----- Couche 3
+Cercle (x=5, y=5, l=1, aire=3.14159)
+----- Couche 4
+Couche initialisee
+----- Couche 0
+Rectangle (x=0, y=0, l=2, h=1, aire=2)
+----- Couche 1
+Carre (x=1, y=1, c=1, aire=1)
+----- Couche 2
+Carre (x=1, y=1, c=1, aire=1)
+----- Couche 3
+Couche vide
+----- Couche 4
+Couche initialisee
+----- Couche 0
+Couche vide
+----- Couche 1
+Couche initialisee
+----- Couche 2
+Couche initialisee
+----- Couche 3
+Couche initialisee
+----- Couche 4
+Couche initialisee

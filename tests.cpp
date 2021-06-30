@@ -100,15 +100,12 @@ void Tests::tests_unitaires_couche()
    couche.addForme(pCarre2);
    couche.addForme(pCercle);
    cout << "Aire avec la couche = " << couche.aire() << endl;
-   // couche.translater(1,1);
-   // cout << "Origine Cercle (6,6) = x: " << pCercle->getAncrage().x << " , y: " << pCercle->getAncrage().y << endl;
-   // cout << "etat couche = " << couche.getEtat() << endl;
-   // couche.changeEtat(INACTIVE);
-   // cout << "etat couche = " << couche.getEtat() << endl;
-   // couche.changeEtat(ACTIVE);
-   couche.afficher(cout);
-   couche.removeForme(0);
-   cout << "Aire avec la couche - le carre = " << couche.aire() << endl;
+   couche.translater(1,1);
+   cout << "Origine Cercle (6,6) = x: " << pCercle->getAncrage().x << " , y: " << pCercle->getAncrage().y << endl;
+   cout << "etat couche = " << couche.getEtat() << endl;
+   couche.changeEtat(INACTIVE);
+   cout << "etat couche = " << couche.getEtat() << endl;
+   couche.changeEtat(ACTIVE);
    couche.afficher(cout);
 }
 
