@@ -1,10 +1,7 @@
 /********
  * Fichier: vecteur.h
- * Auteurs: Emile Renaud
- * Date: 22 juin 2021 (creation)
- * Description: 
- *    
- *    
+ * Auteurs: Emile Renaud / MAxence
+ * Date: 22 juin 2021 (creation)  
 ********/
 
 #ifndef VECTEUR_H
@@ -32,8 +29,6 @@ public:
     
     
 private:
-
-protected:
     Forme** _tableau;
     int _capacite;
     int _indice;

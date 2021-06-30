@@ -1,10 +1,7 @@
 /********
  * Fichier: vecteur.cpp
- * Auteurs: Emile Renaud
- * Date: 22 juin 2021 (creation)
- * Description: 
- *    
- *    
+ * Auteurs: Emile Renaud / Maxence
+ * Date: 22 juin 2021 (creation) 
 ********/
 
 #include "vecteur.h"

@@ -1,10 +1,7 @@
 /********
  * Fichier: rectangle.cpp
- * Auteurs: Emile Renaud
- * Date: 22 juin 2021 (creation)
- * Description: 
- *    
- *    
+ * Auteurs: Emile Renaud / Maxence
+ * Date: 22 juin 2021 (creation)  
 ********/
 
 #include "rectangle.h"
@@ -30,16 +27,7 @@ Rectangle::Rectangle(int x1, int y1, int width, int height)
 Rectangle::~Rectangle()
 {
 }
-// void Rectangle::findCorner()
-// {
-//     _p1 = _ancrage;
-//     _p2.x = _ancrage.x + _width;
-//     _p2.y = _ancrage.y;
-//     _p3.x = _ancrage.x + _width;
-//     _p3.y = _ancrage.y + _height;
-//     _p4.x = _ancrage.x;
-//     _p4.y = _ancrage.y + _height;
-// }
+
 
 double Rectangle::aire()
 {

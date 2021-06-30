@@ -1,10 +1,7 @@
 /********
  * Fichier: cercle.h
- * Auteurs: Emile Renaud
+ * Auteurs: Emile Renaud / Maxence
  * Date: 22 juin 2021 (creation)
- * Description: 
- *    
- *    
 ********/
 
 #ifndef CERCLE_H
@@ -27,7 +24,7 @@ public:
     void setRayon(int rayon);
     int getRayon(void);
 
-protected:
+private:
     int _rayon;
 };
 

@@ -1,10 +1,7 @@
 /********
  * Fichier: cercle.cpp
- * Auteurs: Emile Renaud
+ * Auteurs: Emile Renaud / Maxence
  * Date: 22 juin 2021 (creation)
- * Description: 
- *    
- *    
 ********/
 
 #include "cercle.h"

@@ -1,10 +1,7 @@
 /********
  * Fichier: carre.h
- * Auteurs: Emile Renaud
+ * Auteurs: Emile Renaud / Maxence
  * Date: 22 juin 2021 (creation)
- * Description: 
- *    
- *    
 ********/
 
 #ifndef CARRE_H

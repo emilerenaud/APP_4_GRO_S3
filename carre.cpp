@@ -1,10 +1,7 @@
 /********
  * Fichier: carre.cpp
- * Auteurs: Emile Renaud
- * Date: 22 juin 2021 (creation)
- * Description: 
- *    
- *    
+ * Auteurs: Emile Renaud / Maxence
+ * Date: 22 juin 2021 (creation)  
 ********/
 
 #include "carre.h"
@@ -14,7 +11,6 @@ Carre::Carre()
     ancrage.x = 0;
     ancrage.y = 0;
     _width = _height = 1;
-    // findCorner();
 }
 
 

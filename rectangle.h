@@ -1,10 +1,7 @@
 /********
  * Fichier: rectangle.h
- * Auteurs: Emile Renaud
- * Date: 22 juin 2021 (creation)
- * Description: 
- *    
- *    
+ * Auteurs: Emile Renaud / MAxence
+ * Date: 22 juin 2021 (creation)  
 ********/
 
 #ifndef RECTANGLE_H
@@ -28,8 +25,6 @@ public:
     void setLength(int lenght);
     int getWitdh(void);
     int getLength(void);
-private:
-
 protected:
     int _width;
     int _height;
