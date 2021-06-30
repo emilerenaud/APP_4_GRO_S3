@@ -59,11 +59,14 @@ void Tests::tests_unitaires_vecteur()
    Forme *pCarre;
    pCarre = new Carre(1,1,1);
    vecteur.addForme(pCarre);
+   cout << "Capacite vecteur(1) : " << vecteur.getCapacite() << endl;
    cout << "Indice vecteur(1) : " << vecteur.getIndice() << endl;
    cout << "Aire forme 0(1) : " << vecteur.getForme(0)->aire() << endl;
    Forme *pRect = new Rectangle(0,0,1,2);
+   Forme *pRect2 = new Rectangle(0,0,1,2);
    vecteur.addForme(pRect);
-   cout << "capacite vecteur(2) : " << vecteur.getCapacite() << endl;
+   vecteur.addForme(pRect2);
+   cout << "capacite vecteur(4) : " << vecteur.getCapacite() << endl;
    cout << "Indice vecteur(2) : " << vecteur.getIndice() << endl;
    vecteur.afficher(cout);
 
@@ -112,6 +115,26 @@ void Tests::tests_unitaires_couche()
 void Tests::tests_unitaires_canevas()
 {
    // Tests sur la classe Canevas
+   Canevas scene;
+   scene.afficher(cout);
+   Forme *pRect = new Rectangle(0,0,2,1);
+   Forme *pCarre = new Carre(1,1,1);
+   Forme *pCarre2 = new Carre(1,1,1);
+   Forme *pCercle = new Cercle(5,5,1);
+   scene.ajouterForme(pRect);
+   scene.activerCouche(1);
+   scene.ajouterForme(pCarre);
+   scene.activerCouche(2);
+   scene.ajouterForme(pCarre2);
+   scene.activerCouche(3);
+   scene.ajouterForme(pCercle);
+   cout << "Aire " << scene.aire() << endl;
+   scene.afficher(cout);
+   scene.retirerForme(0);
+   scene.afficher(cout);
+   scene.reinitialiser();
+   scene.afficher(cout);
+
 }
 
 void Tests::tests_unitaires()
